@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FavoritesTableViewController.h
 //  FoodFaves
 //
 //  Created by Ross Gottschalk on 8/10/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface FavoritesTableViewController : UITableViewController
 
 @end
-
