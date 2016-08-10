@@ -15,7 +15,8 @@
 		5BC735501D5BB288008B4BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC7354F1D5BB288008B4BA3 /* Assets.xcassets */; };
 		5BC735531D5BB288008B4BA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC735511D5BB288008B4BA3 /* LaunchScreen.storyboard */; };
 		5BC7355C1D5BBD49008B4BA3 /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7355B1D5BBD49008B4BA3 /* FavoritesTableViewController.m */; };
-		5BC7355F1D5BC5EF008B4BA3 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7355E1D5BC5EF008B4BA3 /* Restaurant.m */; };
+		5BC735641D5BD279008B4BA3 /* Restaurant+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC735611D5BD279008B4BA3 /* Restaurant+CoreDataProperties.m */; };
+		5BC735651D5BD279008B4BA3 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC735631D5BD279008B4BA3 /* Restaurant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +33,10 @@
 		5BC735541D5BB288008B4BA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BC7355A1D5BBD49008B4BA3 /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewController.h; sourceTree = "<group>"; };
 		5BC7355B1D5BBD49008B4BA3 /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
-		5BC7355D1D5BC5EF008B4BA3 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
-		5BC7355E1D5BC5EF008B4BA3 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
+		5BC735601D5BD279008B4BA3 /* Restaurant+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Restaurant+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5BC735611D5BD279008B4BA3 /* Restaurant+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Restaurant+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5BC735621D5BD279008B4BA3 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		5BC735631D5BD279008B4BA3 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,14 +69,13 @@
 		5BC7353F1D5BB288008B4BA3 /* FoodFaves */ = {
 			isa = PBXGroup;
 			children = (
+				5BC735661D5BD281008B4BA3 /* Models */,
 				5BC735431D5BB288008B4BA3 /* AppDelegate.h */,
 				5BC735441D5BB288008B4BA3 /* AppDelegate.m */,
 				5BC735461D5BB288008B4BA3 /* RestaurantViewController.h */,
 				5BC735471D5BB288008B4BA3 /* RestaurantViewController.m */,
 				5BC7355A1D5BBD49008B4BA3 /* FavoritesTableViewController.h */,
 				5BC7355B1D5BBD49008B4BA3 /* FavoritesTableViewController.m */,
-				5BC7355D1D5BC5EF008B4BA3 /* Restaurant.h */,
-				5BC7355E1D5BC5EF008B4BA3 /* Restaurant.m */,
 				5BC735491D5BB288008B4BA3 /* Main.storyboard */,
 				5BC7354F1D5BB288008B4BA3 /* Assets.xcassets */,
 				5BC735511D5BB288008B4BA3 /* LaunchScreen.storyboard */,
@@ -90,6 +92,26 @@
 				5BC735411D5BB288008B4BA3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BC735661D5BD281008B4BA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BC735671D5BD293008B4BA3 /* NO TOUCHY */,
+				5BC735621D5BD279008B4BA3 /* Restaurant.h */,
+				5BC735631D5BD279008B4BA3 /* Restaurant.m */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		5BC735671D5BD293008B4BA3 /* NO TOUCHY */ = {
+			isa = PBXGroup;
+			children = (
+				5BC735601D5BD279008B4BA3 /* Restaurant+CoreDataProperties.h */,
+				5BC735611D5BD279008B4BA3 /* Restaurant+CoreDataProperties.m */,
+			);
+			name = "NO TOUCHY";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,10 +185,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BC735481D5BB288008B4BA3 /* RestaurantViewController.m in Sources */,
+				5BC735651D5BD279008B4BA3 /* Restaurant.m in Sources */,
 				5BC735451D5BB288008B4BA3 /* AppDelegate.m in Sources */,
 				5BC735421D5BB288008B4BA3 /* main.m in Sources */,
 				5BC7355C1D5BBD49008B4BA3 /* FavoritesTableViewController.m in Sources */,
-				5BC7355F1D5BC5EF008B4BA3 /* Restaurant.m in Sources */,
+				5BC735641D5BD279008B4BA3 /* Restaurant+CoreDataProperties.m in Sources */,
 				5BC7354E1D5BB288008B4BA3 /* FoodFaves.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

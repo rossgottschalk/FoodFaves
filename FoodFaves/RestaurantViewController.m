@@ -31,7 +31,7 @@
 
 - (IBAction)stepperValueChanged:(UIStepper *)sender
 {
-    {
+
 //        UIView *contentView = [sender superview];
 //        //content view is the "superview" of what the sender(uistepper) is inside.
 //        
@@ -47,10 +47,12 @@
         //Take the new value(of the stepper) and string the new number with the spellCountLabel
         
 //        [self saveContext];
-        
-    }
-
 }
+- (IBAction)addRestaurantTapped:(UIBarButtonItem *)sender
+{
+    
+}
+
 
 
 @end

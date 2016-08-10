@@ -23,13 +23,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add Restaurant Notes:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cDm-iP-jI1">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add Restaurant Notes..." translatesAutoresizingMaskIntoConstraints="NO" id="cDm-iP-jI1">
                                 <rect key="frame" x="40" y="174" width="520" height="205"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cDm-iP-jI1" secondAttribute="height" multiplier="104:41" id="whu-op-cMc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="4ui-h1-Zdi">
@@ -68,7 +68,11 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="iOm-Bg-X2l">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Xyn-FH-mL5"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Xyn-FH-mL5">
+                            <connections>
+                                <action selector="addRestaurantTapped:" destination="tZY-Iw-mRC" id="sXC-0q-LlR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="YhZ-c2-izd" id="ymh-dh-gIF"/>
